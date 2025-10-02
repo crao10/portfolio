@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandni Rao - De-Risking Moonshots at Scale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 0.8; }
+        }
+        .animate-pulse-custom {
+            animation: pulse 3s ease-in-out infinite;
+        }
+        .delay-700 {
+            animation-delay: 700ms;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white">
+    <!-- Progress Bar -->
+    <div id="progressBar" class="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
+        <div id="progressFill" class="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300" style="width: 0%"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl animate-pulse-custom"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-purple-500 rounded-full blur-3xl animate-pulse-custom delay-700"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full mb-8 border border-blue-500/30">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                <span class="text-sm font-medium">Case Study for X, The Moonshot Factory</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+                De-Risking Moonshots at Scale
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Six years systematically translating breakthrough science into viable ventures across quantum, climate, space, health, and AI.
+            </p>
+            
+            <div class="text-lg text-gray-400 max-w-3xl mx-auto mb-12 italic">
+                "For the past six years at Creative Destruction Lab, I've worked with exceptionally technical founders in frontier fields. My role was to help de-risk their brilliant but uncertain innovations—working hands-on with founders to translate breakthrough science into investment-ready ventures. Over weeks and months, I shaped investor narratives, refined GTM strategies, validated business models, and facilitated the partnerships with world-class scientists, mentors, and investors that accelerated their path from hypothesis to viable business."
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#challenge" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full font-semibold hover:scale-105 transition-transform">
+                    Explore Challenge
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </a>
+                
+                <a href="#methodology" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full font-semibold hover:scale-105 transition-transform">
+                    Explore Methodology
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </a>
+                
+                <a href="#case-studies" class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-full font-semibold hover:scale-105 transition-transform">
+                    Explore Case Studies
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Challenge -->
+    <section id="challenge" class="flex items-center justify-center px-6 py-16">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-5xl font-bold mb-12 text-center">The Challenge</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">The Problem Space</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        The world's most ambitious technological breakthroughs—quantum computing, carbon capture, satellite systems, cancer therapeutics, AI—emerge from brilliant technical founders: PhDs, professors, and researchers who've spent decades at the frontier of scientific discovery.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Yet as economists from Schumpeter to Teece have documented, scientific excellence and commercial viability require fundamentally different capabilities. The "valley of death" between laboratory breakthrough and market impact isn't a failure of vision—it's the challenge of translating technical novelty into investable ventures, articulating value propositions that resonate beyond academia, and building the partnerships that transform research into scaled solutions.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">My Role</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">
+                        As a Business Innovation Lead at CDL, I built a systematic approach to de-risk these moonshots:
+                    </p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Reviewed 200+ technical applications across 5 deep tech verticals</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Conducted hundreds of founder interviews to assess technical novelty and market potential</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Worked closely with 50-80 startups through 9-month intensive programs</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-green-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Launched CDL Estonia focused on cybersecurity technologies</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methodology" class="flex items-center justify-center px-6 py-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold mb-6 text-center">The Methodology</h2>
+            <p class="text-xl text-gray-400 text-center mb-12 max-w-3xl mx-auto">
+                A systematic, repeatable framework for translating deep tech into investable ventures
+            </p>
+            
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <!-- Step 1 -->
+                <div class="flex items-center gap-3">
+                    <div class="bg-white/5 backdrop-blur-lg rounded-xl px-6 py-4 border border-white/10 hover:border-blue-500/30 transition-all">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                                <span class="text-sm font-bold">1</span>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">Technical Diligence</div>
+                                <div class="text-xs text-gray-400">Validate novelty & feasibility</div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-500 hidden lg:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-center gap-3">
+                    <div class="bg-white/5 backdrop-blur-lg rounded-xl px-6 py-4 border border-white/10 hover:border-purple-500/30 transition-all">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                                <span class="text-sm font-bold">2</span>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">Market Validation</div>
+                                <div class="text-xs text-gray-400">Size markets & identify opportunities</div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-500 hidden lg:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-center gap-3">
+                    <div class="bg-white/5 backdrop-blur-lg rounded-xl px-6 py-4 border border-white/10 hover:border-blue-500/30 transition-all">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                                <span class="text-sm font-bold">3</span>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">Narrative Shaping</div>
+                                <div class="text-xs text-gray-400">Craft investor memos & value props</div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-500 hidden lg:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex items-center gap-3">
+                    <div class="bg-white/5 backdrop-blur-lg rounded-xl px-6 py-4 border border-white/10 hover:border-purple-500/30 transition-all">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                                <span class="text-sm font-bold">4</span>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">Partnership Facilitation</div>
+                                <div class="text-xs text-gray-400">Connect to mentors & investors</div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-500 hidden lg:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-white/5 backdrop-blur-lg rounded-xl px-6 py-4 border border-white/10 hover:border-blue-500/30 transition-all">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                            <span class="text-sm font-bold">5</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-white">Go-to-Market Strategy</div>
+                            <div class="text-xs text-gray-400">Test business models & pricing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section id="case-studies" class="flex items-center justify-center px-6 py-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold mb-6 text-center">Case Studies</h2>
+            <p class="text-xl text-gray-400 text-center mb-16 max-w-3xl mx-auto">
+                Representative examples of de-risking deep tech across verticals
+            </p>
+            
+            <div class="space-y-6">
+                <!-- Space Case Study -->
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-indigo-500/30 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-indigo-600/30 to-blue-600/30 px-6 py-4 border-b border-white/10">
+                        <h4 class="text-lg font-bold text-white">Space</h4>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Autonomous Medical Assistant for Extreme Environments</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-2">
+                            <strong>The Challenge:</strong> An ER physician-founder built a resuscitation app with the goal of launching it in space and creating the first autonomous medical assistant for space applications. He had already won a Canadian Space Agency contract, but was facing investor skepticism about the path from hospital app to ISS-ready platform.
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-2">
+                            <strong>My Work:</strong>
+                        </p>
+                        <ul class="text-gray-300 text-sm leading-relaxed space-y-2 mb-3 ml-4">
+                            <li>• Embedded as strategic thought partner with the founding team</li>
+                            <li>• Recruited space medicine experts to validate the technical roadmap</li>
+                            <li>• Conducted market analysis across adjacent extreme environment sectors (military, maritime, remote operations)</li>
+                            <li>• Shaped a phased investment narrative with clear value inflection points: resuscitation MVP → comprehensive autonomous assistant</li>
+                            <li>• Translated technical requirements into an investable business roadmap</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Climate & Life Sciences Case Study -->
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-green-500/30 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-green-600/30 to-emerald-600/30 px-6 py-4 border-b border-white/10">
+                        <h4 class="text-lg font-bold text-white">Climate & Life Sciences</h4>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Cultivated Protein with Functional Fat Integration</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-2">
+                            <strong>The Challenge:</strong> A biotech startup developed a breakthrough method for incorporating functional adipose tissue into cultivated protein—solving one of the cellular agriculture industry's hardest technical problems: replicating the marbling and mouthfeel of conventional meat. While the science was validated in small-scale bioreactors, they faced the classic commercialization valley of death: unclear regulatory pathway, capital-intensive scale-up requirements, and a market skeptical of "lab-grown meat" economics.
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-2">
+                            <strong>My Work:</strong>
+                        </p>
+                        <ul class="text-gray-300 text-xs space-y-1 mb-3 ml-4">
+                            <li>• <strong>Technical validation with domain experts:</strong> Leveraged my biochemistry background to interview the founders on their differentiation protocols and lipid integration mechanisms. Recruited cellular agriculture researchers and food scientists to assess the technology's scalability and regulatory feasibility.</li>
+                            <li>• <strong>Market discovery & commercialization strategy:</strong> Conducted stakeholder interviews with food manufacturers, cultivated meat industry veterans, and regulatory consultants to map the unique challenges—multi-year FDA approval timelines, capital requirements for GMP manufacturing facilities, and consumer acceptance hurdles.</li>
+                            <li>• <strong>GTM sequencing & business model:</strong> Rather than pursuing direct-to-consumer (which requires massive capital for both production scale and consumer education), shaped a B2B2C strategy: target premium restaurant partnerships first to build proof-of-concept and brand credibility before retail launch.</li>
+                            <li>• <strong>Financial modeling:</strong> Built market sizing across premium meat segments, modeled unit economics at different production scales (1,000L vs 10,000L bioreactors), and developed pro forma P&Ls showing the path from pilot facility to commercial profitability.</li>
+                            <li>• <strong>Translated technical innovation to commercial narrative:</strong> Articulated the value proposition beyond "lab-grown"—positioned as sustainable protein with superior consistency, traceability, and customizable nutritional profiles that conventional agriculture cannot achieve.</li>
+                        </ul>
+                        <div class="flex items-center gap-2 text-xs text-green-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Seed funding secured | Regulatory pathway validated | Strategic partnership discussions with food conglomerate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Cybersecurity Case Study -->
+                <div class="bg-white/5 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-purple-500/30 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-purple-600/30 to-pink-600/30 px-6 py-4 border-b border-white/10">
+                        <h4 class="text-lg font-bold text-white">AI & Cybersecurity</h4>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Building De-Risking Infrastructure for Deep Tech Ecosystems</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-2">
+                            <strong>The Challenge:</strong> Two parallel challenges required systematic approaches to de-risking early-stage deep tech at scale: (1) Launching CDL Estonia to evaluate cybersecurity and cloud-focused AI technologies across Europe, and (2) Partnering with XPRIZE to provide commercial validation for climate tech solutions competing for a global award.
+                        </p>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-2">
+                            <strong>My Work:</strong>
+                        </p>
+                        <ul class="text-gray-300 text-sm leading-relaxed space-y-2 mb-3 ml-4">
+                            <li>• <strong>CDL Estonia launch - Cybersecurity & AI:</strong> Built and trained a technical due diligence team to evaluate hundreds of cybersecurity-focused applications (blockchain protocols, cloud security, AI-driven threat detection). Recruited domain experts in cryptography and distributed systems to validate technical claims. Developed evaluation frameworks to assess both technical novelty and commercial viability across zero-knowledge proofs, post-quantum cryptography, and AI security applications.</li>
+                            <li>• <strong>XPRIZE Climate Tech Partnership:</strong> Served as CDL's commercial due diligence partner for XPRIZE's climate tech award (while XPRIZE conducted technical validation). Interviewed founders from around the world building breakthrough carbon capture, renewable energy, and sustainable materials technologies. Assessed market readiness, GTM strategies, and investment potential for technologies competing for global recognition.</li>
+                            <li>• <strong>Systematic methodology transfer:</strong> Created repeatable frameworks for due diligence that non-technical team members could apply—translating complex technical concepts (consensus mechanisms, lattice-based cryptography, direct air capture technology) into business evaluation criteria.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Stats Bar -->
+            <div class="mt-16 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-blue-400 mb-2">200+</div>
+                        <div class="text-sm text-gray-400">Startups Reviewed</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-purple-400 mb-2">50-80</div>
+                        <div class="text-sm text-gray-400">Deeply Mentored</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-blue-400 mb-2">$1B+</div>
+                        <div class="text-sm text-gray-400">Capital Raised</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-purple-400 mb-2">5</div>
+                        <div class="text-sm text-gray-400">Deep Tech Verticals</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why X -->
+    <section id="why-x" class="flex items-center justify-center px-6 py-16">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold mb-12 text-center">Why This Matters for X</h2>
+            
+            <div class="space-y-6 mb-12">
+                <div class="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+                    <h3 class="text-3xl font-bold mb-4 text-blue-400">Translating Science into Business</h3>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Six years translating quantum computing, carbon capture, satellite systems, and AI breakthroughs into business models that investors and partners understand. I've learned how to bridge the gap between "this is scientifically novel" and "this is commercially viable."
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-r from-purple-500/10 to-blue-500/10 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+                    <h3 class="text-3xl font-bold mb-4 text-purple-400">Systematic De-Risking at Scale</h3>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        X's Business Innovation team needs to systematically accelerate moonshots from earliest stages to investable ventures. I've already done this at scale — building repeatable processes for market validation, partnership facilitation, and investment readiness across hundreds of deep tech startups.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
+                    <h3 class="text-3xl font-bold mb-4 text-blue-400">Running at Hard Problems First</h3>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Not every moonshot should survive. I've learned to run at the hardest problems first, test the riskiest assumptions early, and make honest calls about what deserves more investment. X celebrates this intellectual honesty — and so do I.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-2xl text-gray-300 mb-8 italic max-w-3xl mx-auto">
+                    "I'm excited to carry that forward: helping radical ideas find the partnerships, business models, and strategic clarity they need to graduate into world-changing ventures."
+                </p>
+                
+                <div class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full font-semibold">
+                    Ready to accelerate moonshots at X
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/10">
+        <div class="max-w-6xl mx-auto text-center text-gray-400">
+            <p class="text-sm">Built with ambition for X, The Moonshot Factory</p>
+            <p class="text-xs mt-2">Case study demonstrating systematic business innovation for deep tech ventures</p>
+        </div>
+    </footer>
+
+    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (window.scrollY / totalScroll) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+        });
+    </script>
+</body>
+</html>
